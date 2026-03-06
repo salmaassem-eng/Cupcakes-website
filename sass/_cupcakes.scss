@@ -1,0 +1,84 @@
+@import "fonts";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+
+.cupcake-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: 0.35s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.cupcake-img {
+  margin-bottom: 15px;
+
+  img {
+    max-width: 160px;
+    transition: 0.4s;
+  }
+}
+
+.cupcake-info {
+  h5 {
+    font-family: "Rounda";
+    color: $chocolate;
+    font-weight: 600;
+  }
+
+  .price {
+    color: $strawberry;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+button.cupcake-btn {
+  background-color: $strawberry;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 22px;
+  border: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button.cupcake-btn:hover {
+  background-color: $pink;
+}
+
+.cupcake-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.cupcake-card:hover img {
+  transform: scale(1.1) translateY(-8px);
+}
+
+input.form-control {
+  border-radius: 30px;
+  padding: 12px 18px;
+  border: 1px solid #eee;
+}
+
+input.form-control:focus {
+  border-color: $strawberry;
+  box-shadow: 0 0 0 0.15rem rgba(231, 138, 152, 0.25);
+}
+
+/* filter buttons */
+
+button.filter-btn {
+  border-radius: 25px;
+  border: 1px solid $pink;
+  color: $chocolate;
+}
+
+button.filter-btn:hover {
+  background-color: $strawberry;
+  border-color: $strawberry;
+  color: white;
+}

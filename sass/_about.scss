@@ -1,0 +1,80 @@
+@import "fonts";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.about {
+
+  background: $cream;
+  padding: 90px 0;
+
+  .about-text {
+
+    h2{
+    font-family: "Rounda";
+    font-size: 70px;
+    color: $strawberry;
+    opacity: 0.15;
+    letter-spacing: 6px;
+    }
+
+    h3 {
+        position: absolute;
+        left:25%;
+        top:80%;
+    transform: translate(-50%, -50%);
+      font-family: "LieToMe";
+      font-size: 36px;
+      color: $chocolate;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $chocolate;
+      line-height: 1.8;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    .about-btn {
+
+      background: $strawberry;
+      color: white;
+      border-radius: 30px;
+      padding: 10px 25px;
+      border: none;
+      transition: .3s;
+
+      &:hover {
+        background: $pink;
+      }
+    }
+  }
+
+  .about-img {
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      animation: floatCake 4s ease-in-out infinite;
+    }
+
+  }
+
+}
+
+
+@keyframes floatCake {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}

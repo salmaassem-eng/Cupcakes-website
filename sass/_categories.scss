@@ -1,0 +1,70 @@
+@import "fonts";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.section-title {
+  margin-bottom: 10px;
+  .title-bg {
+    font-family: "Rounda";
+    font-size: 70px;
+    color: $strawberry;
+    opacity: 0.15;
+    letter-spacing: 6px;
+  }
+
+  .title-main {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    font-family: "LieToMe";
+    font-size: 36px;
+    color: $chocolate;
+  }
+}
+
+.specialities {
+  background: $vanilla;
+  padding: 80px 0;
+
+  .special-item {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid $pink;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: $cream;
+
+    transition: 0.4s;
+    cursor: pointer;
+
+    i {
+      font-size: 36px;
+      color: $strawberry;
+      transition: 0.4s;
+    }
+
+    h6 {
+      color: $chocolate;
+      font-weight: 600;
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+
+      border-color: $strawberry;
+
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+      i {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

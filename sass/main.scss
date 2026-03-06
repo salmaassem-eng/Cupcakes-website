@@ -1,0 +1,21 @@
+@import "fonts";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "navbar";
+@import "hero";
+@import "categories";
+@import "about";
+@import "cupcakes";
+@import "footer";
+
+body {
+  font-family: "Rounda", sans-serif;
+  background-color: $cream;
+}
+
+.logo-top {
+  // font-family: "LieToMe", cursive;
+  font-size: 32px;
+  color: $strawberry;
+}
+

@@ -1,0 +1,42 @@
+@import "fonts";
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.footer{
+
+background:$cream;
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    align-items:center;
+a{
+font-size:22px;
+margin:0 10px;
+color:$chocolate;
+transition:.3s;
+}
+
+a:hover{
+color:$strawberry;
+transform:translateY(-3px);
+}
+
+}
+
+.footer-logo{
+font-family:"LieToMe";
+font-size:34px;
+color:$strawberry;
+}
+
+
+.copyright{
+font-size:14px;
+color:$chocolate;
+opacity:.7;
+
+}
+
+}
